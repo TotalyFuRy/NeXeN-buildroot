@@ -1,3 +1,17 @@
+!Draft!
+
+The MPTCP Connector should provide :
+- MPTCP patched kernel
+- Shadowsocks server with connmarktos option for TCP traffic
+- TUN server(s) (MLVPN, glorytun, mud) for incoming and !TCP traffic
+- Dnsmasq for dns proxy (no dhcp) listening on a private ip
+- REST API to setup QoS and TC rules (called by the noc)
+
+Architecture note :
+- DHCP service is provided by the NoC on ip 169.254.254.67
+- DNS  service is provided by the NoC on ip 169.254.254.53
+- Public gateway are managed by the NoC on ip 169.254.254.3
+
 Buildroot is a simple, efficient and easy-to-use tool to generate embedded
 Linux systems through cross-compilation.
 
