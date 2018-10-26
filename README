@@ -1,3 +1,12 @@
+ACS :
+- Device first do subscribe request providing hardware infos like mac adress, board info
+The ACS store this info with public ip in database and return a device id.
+- Once the device has a device id, he sends periodically register request to the ACS to get
+ACS credentials, ACS credential are sent when user register his device in his manager and then
+associate this device to a site.
+- Once the device has ACS credentials it ask ACS periodically action to do.
+
+
 Buildroot is a simple, efficient and easy-to-use tool to generate embedded
 Linux systems through cross-compilation.
 
